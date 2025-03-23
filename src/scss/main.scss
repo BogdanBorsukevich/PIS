@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&display=swap");
+
+// Кольори
+$black: #2C2C2C;
+$gray: #808080;
+$dark-gray: #4E4E4E;
+$pink: #F8F3EC;
+$dark-pink: #DBCCBA;
+
+// Розміри
+$width: 1440px;
+$header-height: 740px;
+$footer-height: 786px;
+$content-height: 994px;
+
+// Розміри шрифтів
+$p-font-size: 18px;
+$p-font-size-large: 20px;
+$p-font-size-small: 16px;
+$h1-font-size: 72px;
+$h2-font-size: 48px;
+$h3-font-size: 24px;
+
+// Відступи
+$margin: 50px;
+$margin-left: 40px;
+
+html {
+  font-size: $p-font-size;
+  color: $black;
+  background-color: $pink;
+}
+
+body {
+    max-width: $width;
+    margin: auto;
+    text-align: center;
+    font-family: "Cormorant Infant", serif;
+  
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+// Приклади до п'ятої лаби
+nav {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+a {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: $dark-pink;
+    color: white;
+    text-decoration: none;
+    font-size: $p-font-size-large;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($dark-pink, 10%);
+    }
+  }
+
+header,
+main,
+footer {
+  width: 100%; // Щоб займали всю ширину
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: $h1-font-size;
+  font-weight: bold;
+  font-family: "Cormorant Infant", serif;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: $pink;
+  height: $header-height;
+}
+
+footer {
+  height: $footer-height;
+  background-color: $black;
+  color: $gray;
+}
+
+main {
+  height: $content-height;
+}
